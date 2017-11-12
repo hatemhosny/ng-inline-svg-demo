@@ -1,3 +1,6 @@
-<h1>
-  {{title}}
-</h1>
+<h1>SVG Icons</h1>
+  <div class="svg-icon" *ngFor="let icon of icons" inlineSVG="{{url1 + icon}}.svg" aria-label="icon"></div>
+
+  <div class="svg-icon" inlineSVG="https://raw.githubusercontent.com/hatemhosny/svg-icon/master/dist/trimmed-svg/ant/chrome.svg" aria-label="icon"></div>
+
+  <div class="svg-icon" *ngFor="let icon of sprites" inlineSVG="{{url2}}#{{icon}}" aria-label="icon"></div>

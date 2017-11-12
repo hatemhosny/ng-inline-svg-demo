@@ -1,7 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+
+import { HttpClientModule } from '@angular/common/http';
+import { InlineSVGModule } from 'ng-inline-svg';
 
 import { AppComponent } from './app.component';
 
@@ -10,9 +12,10 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
+    HttpClientModule,
+    InlineSVGModule,
     BrowserModule,
     FormsModule,
-    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
